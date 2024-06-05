@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /downloads/
+sitemap: https://zhavstudio.com/sitemap.xml

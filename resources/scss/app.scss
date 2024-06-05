@@ -1,0 +1,159 @@
+//Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//End Tailwind CSS
+
+// Default theme
+@import '@splidejs/splide/css';
+
+@layer base {
+    * {
+        @apply font-dana-regular;
+        @apply leading-loose
+    }
+
+    h1 {
+        @apply text-5xl;
+        @apply font-bold;
+        @apply mt-4;
+        @apply mb-1;
+        @apply text-gray-800;
+    }
+
+    h2 {
+        @apply text-4xl;
+        @apply font-bold;
+        @apply mt-4;
+        @apply mb-1;
+        @apply text-gray-700;
+    }
+
+    h3 {
+        @apply text-2xl;
+        @apply font-bold;
+        @apply mt-4;
+        @apply mb-1;
+        @apply text-gray-700;
+    }
+
+    h4 {
+        @apply text-xl;
+        @apply font-bold;
+        @apply mt-4;
+        @apply mb-1;
+        @apply text-gray-700;
+    }
+
+    html[lang="fa-IR"] p {
+        @apply text-sm;
+        @apply mb-12;
+        @apply text-justify;
+    }
+
+    button {
+        @apply text-base;
+        @apply leading-none
+    }
+
+    a {
+        @apply leading-none
+    }
+
+}
+// or other themes
+@import '@splidejs/splide/css/skyblue';
+@import '@splidejs/splide/css/sea-green';
+
+
+// or only core styles
+@import '@splidejs/splide/css/core';
+
+// animate
+@import 'animate.css';
+
+//Aos animate
+@import 'aos/dist/aos.css';
+
+.fixed-navbar {
+    @apply animate__animated animate__fadeInDown bg-white border-t-4 border-my-blue-navy fixed py-2 shadow-2xl;
+
+    .button-head {
+      @apply text-my-blue-navy border-my-blue-navy;
+    }
+
+    .item-js {
+      @apply text-purple-950;
+    }
+
+    .item2-js {
+      @apply text-gray-700;
+    }
+    .logo {
+        filter: invert(0%);
+    }
+}
+
+.logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.my-shadow{
+    box-shadow: 0px 4px 12px 0px rgba(50, 20, 11, 0.06)
+}
+
+.my-shadow-hover:hover{
+    box-shadow: 0px 4px 14px 0px rgba(50, 20, 11, 0.10)
+}
+
+
+
+.custom-input {
+    border: none;
+}
+
+.custom-input:focus {
+    border: none;
+}
+
+.bgblur{
+    background-color: rgba(50, 20, 11, 0.32);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.bgblur-hover:hover{
+    background-color: rgba(50, 20, 11, 0.32);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+}
+
+.my-opacity:hover{
+    background: linear-gradient(0deg, rgba(50, 20, 11, 0.24) 0%, rgba(50, 20, 11, 0.24) 100%);
+}
+
+.my-grad{
+    background-color: linear-gradient(to bottom, rgba(9, 7, 11, 0.7), rgba(220, 53, 69, 0.4))
+}
+
+
+@font-face {
+    font-family: Iranian-sans;
+    src: url('./iransans/eot/Iranian-sans.eot'); /* IE9 Compat Modes */
+    src: url('./iransans/eot/Iranian-sans.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('./iransans/woff2/Iranian-sans.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('./iransans/woff/Iranian-sans.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('./iransans/ttf/Iranian-sans.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./iransans/svg/Iranian-sans.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: dana-regular;
+    src: url('./dana/eot/dana-regular.eot'); /* IE9 Compat Modes */
+    src: url('./dana/eot/dana-regular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('./dana/woff2/dana-regular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('./dana/woff/dana-regular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('./dana/ttf/dana-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('./dana/svg/dana-regular.svg') format('svg'); /* Legacy iOS */
+}
+
+
